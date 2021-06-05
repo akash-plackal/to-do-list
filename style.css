@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1549577434-d7615fd4ceac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1491&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    
+}
+
+header {
+    font-size: 1rem;
+}
+
+header,form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    border: none;
+    outline: none;
+    background: white;
+}
+
+/* form input {
+    border-radius: 5px 0 0 5px;
+}
+
+form button {
+    border-radius: 0 5px 5px 0;
+} */
+
+form button {
+    color:#e48e76 ;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+form button:hover {
+    background:#e48e76 ;
+    color:white ;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.25rem;
+    background: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.7 ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .ticked-btn {
+    /* background: #f87955; */
+    background: wheat;
+    border: none;
+    padding: 0.8rem;
+    cursor:pointer;
+    font-size: 0.8rem;
+}
+
+.todo-item {
+    padding: 0 0.4rem;
+}
+
+.ticked-btn {
+    background: #8bdb8b;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.ticked {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    transition: all 400ms ease-in;
+}
