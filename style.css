@@ -111,3 +111,21 @@ form button:hover {
     opacity: 0;
     transition: all 400ms ease-in;
 }
+
+@media (max-width:470px) {
+    .todo-input{
+        width: 70vw;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .todo-button {
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .todo-list {
+       min-width:91vw ;
+    }
+    .fall {
+        transform: translateY(8rem) rotateZ(22deg);
+    }
+}
